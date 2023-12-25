@@ -11,20 +11,34 @@
         font-weight: normal;
     }
     .arrow {
+        border-style: double;
+        border-color:white;
+        border-radius: 9999px;
+        border-width: 5px;
         font-size: 30px;
-        color: black;
+        color: white;
         position: absolute;
         top: 44%;
         transform: translateY(-50%);
         cursor: pointer;
-        opacity: 0.5;
+        opacity: 0.9;
         z-index: 1;
         display: none;
+        // transition: all 0.2s ;
+        transition-duration: 300ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         @include md {
             display: block;
         }
         &:hover {
-            opacity: 0.8;
+            opacity: 1;
+            color:white;
+            scale: 1.2;
+            
+            
+        }
+        &:active{
+            scale:1.1;
         }
     }
     .carouselLeftNav {

@@ -66,6 +66,7 @@ const HeroBanner = () => {
 
     //USEEFFECT
     useEffect(() => {
+        
         // bg will be full url for hero banner image and set background state to bg
         const bg =
 
@@ -78,8 +79,10 @@ const HeroBanner = () => {
             data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
 
         //set background state to bg url
+        
         setBackground(bg);
-    }, [data])
+        console.log(background,1)
+    }, [data,url])
 
 
     //RETURN

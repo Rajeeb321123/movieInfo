@@ -60,6 +60,8 @@ function App() {
       
       // providing action of reducer with url payload
       dispatch(getApiConfiguration(url));
+
+      // console.log(url)
     });
     
   };
